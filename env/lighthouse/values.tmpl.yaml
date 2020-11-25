@@ -50,3 +50,6 @@ cluster:
 # Disable the legacy jx controller in favor of lighthouse-jx's.
 engines:
   jx: false
+
+env:
+  LIGHTHOUSE_REPORT_URL_BASE: "https://pipelines{{.Requirements.ingress.namespaceSubDomain}}{{.Requirements.ingress.domain}}"
